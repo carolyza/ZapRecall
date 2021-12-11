@@ -1,0 +1,49 @@
+.PageCongrats .hidden{
+    display: none;
+    visibility: hidden;
+        }
+
+.PageCongrats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.congrats{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.congrats h2{
+    font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 42px;
+text-align: left;
+
+margin-right: 12px;
+
+}
+
+.layout p{
+    font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+
+text-align: left;
+
+}
+.layout{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
