@@ -1,4 +1,4 @@
-import Style from "./css/Top.css";
+import  "./css/Top.css";
 import Img from "./assets/logo-mini.png";
 
 

@@ -1,10 +1,10 @@
 import Top from "./Top.js";
-import Style from "./css/PageCongrats.css";
+import "./css/PageCongrats.css";
 import IMG from "./assets/party.png";
 
 export default function PageCongrats(){
     return(
-<div class = "PageCongrats hidden">
+<div class = "PageCongrats">
     <Top/>
     <div class = "layout">
         <div class ="congrats">

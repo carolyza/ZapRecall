@@ -1,13 +1,38 @@
 import Top from "./Top.js";
 import Card from "./Card.js";
-import Style from "./css/PageTwo.css";
+import "./css/PageTwo.css";
+import { useState } from "react";
+
+const cards =[{question:"O que queres?", numberCard:"1/5", 
+    inside: "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
+    button1:"Aprendi agora",button2:"Não lembrei",
+ button3:"Lembrei com esforço",button4:"Zap!"}];
 
 
 export default function PageTwo(){
+const [answers,SetAnswers]= useState(0);
+
+const [FaceCard,SetFaceCard]= useState(
+    <Card question = {cards[answers].question}
+    numberCard = {answers}
+    inside = {cards[answers].inside}
+    button1 ={cards[answers].button1}
+    button2 ={cards[answers].button2}
+    button3={cards[answers].button3}
+    button4={cards[answers].button4}
+    counter={()=>Counter()}
+    />
+)
+
+function Counter(){
+    SetAnswers(answers+1);
+    console.log(answers);
+}
+
     const cards =[{question:"O que queres?", numberCard:"1/5", 
     inside: "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
     button1:"Aprendi agora",button2:"Não lembrei",
- button3:"Lembrei com esforço",button4:"Zap!"},
+ button3:"Lembrei com esforço",button4:"Zap!"}
 // {question:"O que vems?", numberCard:"2/5", 
 //     inside: "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
 //     button1:"Aprendi agora",button2:"Não lembrei",
@@ -28,17 +53,11 @@ export default function PageTwo(){
 ]
     
     return(
-        <div class = "PageTwo ">
+        // <div class = "PageTwo">
+        <>
             <Top/>
-            {cards.map((card)=>(
-                <Card question = {card.question}
-                numberCard = {card.numberCard}
-                inside = {card.inside}
-                button1 ={card.button1}
-                button2 ={card.button2}
-                button3={card.button3}
-                button4={card.button4}/>
-            ))}
-        </div>
+            {FaceCard}
+        {/* </div> */}
+        </>
     )
 }

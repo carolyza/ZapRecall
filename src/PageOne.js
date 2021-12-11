@@ -1,17 +1,18 @@
-import Style from "./css/PageOne.css";
+import"./css/PageOne.css";
 import logotipo from "./assets/logo.png";
 import next from "./assets/next.png";
+import App from "./App.js";
 
 
-export default function PageOne(){
+export default function PageOne(props){
     return(
-        <div class = "PageOne hidden">
+        <div className = "PageOne">
         <div class ="logo">
         <img src ={logotipo}></img>
         </div>
-        <div class ="Start">
+        <div className ="Start" onClick={()=>props.NextPage()}>
         <p>Praticar React</p>
-        <img src={next}></img>
+        <img src ={next}></img>
         </div>
         </div>
     )

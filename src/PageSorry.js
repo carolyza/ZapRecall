@@ -1,10 +1,10 @@
 import Top from "./Top.js";
-import Style from "./css/PageSorry.css";
+import "./css/PageSorry.css";
 import IMG from "./assets/sad.png";
 
 export default function PageSorry(){
     return(
-        <div class = "PageSorry hidden">
+        <div class = "PageSorry">
             <Top/>
             <div class = "layoutSorry">
         <div class ="sorry">
