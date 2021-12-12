@@ -1,17 +1,17 @@
-.black{
-    border: 5px solid #000000;
+.black {
+  border: 5px solid #000000;
 }
 
-.red{
-    border: 5px solid #f64848;  
+.red {
+  border: 5px solid #f64848;
 }
 
-.green{
-    border: 5px solid #62db38;
+.green {
+  border: 5px solid #62db38;
 }
 
-.yellow{
-    border: 5px solid #ffef61;
+.yellow {
+  border: 5px solid #ffef61;
 }
 
 /* .pageTwo {
@@ -36,10 +36,17 @@
 }
 
 .topCard {
+  width: 100%;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: right;
+  position: relative;
+}
+.topCard h2 {
+  position: absolute;
+  right: 12px;
 }
 
 .contentCard h3 {
@@ -70,31 +77,31 @@
 }
 
 .button1 {
-  height: 48px;
-  width: 65px;
+  height: 60px;
+  width: 77px;
   border-radius: 12px;
   border: 3px solid #000000;
   background-color: #ffffff;
 }
 .button2 {
-  height: 48px;
-  width: 65px;
+  height: 60px;
+  width: 77px;
   border-radius: 12px;
   border: 3px solid #f64848;
   background-color: #ffffff;
 }
 
 .button3 {
-  height: 48px;
-  width: 65px;
+  height: 60px;
+  width: 77px;
   border-radius: 12px;
   border: 3px solid #62db38;
   background-color: #ffffff;
 }
 
 .button4 {
-  height: 48px;
-  width: 65px;
+  height: 60px;
+  width: 77px;
   border-radius: 12px;
   border: 3px solid #ffef61;
   background-color: #ffffff;
@@ -122,21 +129,12 @@
   visibility: hidden;
 }
 
-.frontface {
-  position: relative;
-}
 .openAnswer {
   width: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-
-/* .frontface .topCard{
-    position: absolute;
-    right: 2px;
-    width: 100%;
-} */
 
 .backface .openAnswer {
   display: none;
@@ -172,51 +170,54 @@
   line-height: 33px;
   word-wrap: break-word;
   word-break: break-all;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 
-.backface .TopFront{
-    display: none;
-    visibility: hidden;
+.backface .TopFront {
+  display: none;
+  visibility: hidden;
 }
 
-.answerface .TopFront{
-    display: none;
-    visibility: hidden;
+.answerface .TopFront {
+  display: none;
+  visibility: hidden;
 }
 
-.answerface .Question{
-    display: none;
-    visibility: hidden;
+.answerface .Question {
+  display: none;
+  visibility: hidden;
 }
 
-.answerface .openAnswer{
-    display: none;
-    visibility: hidden;
+.answerface .openAnswer {
+  display: none;
+  visibility: hidden;
 }
 
-.answerface .buttons{
-    display: none;
-    visibility: hidden;
+.answerface .buttons {
+  display: none;
+  visibility: hidden;
 }
 
-.frontface .GoToNext{
-    display: none;
-    visibility: hidden;
+.frontface .GoToNext {
+  display: none;
+  visibility: hidden;
 }
 
-.backface .GoToNext{
-    display: none;
-    visibility: hidden;
+.backface .GoToNext {
+  display: none;
+  visibility: hidden;
 }
 
-.GoToNext{
-    width: 100%;
+.GoToNext {
+  width: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
-.GoToNext img{
-    margin-right: 20px;
-    margin-bottom: 20px;
+.GoToNext img {
+  margin-right: 20px;
+  margin-bottom: 20px;
 }

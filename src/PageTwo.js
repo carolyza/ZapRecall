@@ -2,8 +2,9 @@ import Top from "./Top.js";
 import Card from "./Card.js";
 import "./css/PageTwo.css";
 import { useState } from "react";
+import App from "./App.js";
 
-export default function PageTwo() {
+export default function PageTwo({ Win, Lose }) {
   const [answers, SetAnswers] = useState(0);
 
   function Counter() {
@@ -13,50 +14,73 @@ export default function PageTwo() {
 
   const cards = [
     {
-      question: "O que queres?",
+      question: "O que é JSX?",
       numberCard: "1/5",
-      inside:
-        "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
+      inside: "Uma extensão de linguagem do JavaScript",
       button1: "Aprendi agora",
       button2: "Não lembrei",
       button3: "Lembrei com esforço",
       button4: "Zap!",
     },
     {
-      question: "O que vems?",
+      question: "O React é __",
       numberCard: "2/5",
-      inside:
-        "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
+      inside: "uma biblioteca JavaScript para construção de interfaces",
       button1: "Aprendi agora",
       button2: "Não lembrei",
       button3: "Lembrei com esforço",
       button4: "Zap!",
     },
     {
-      question: "O que comes?",
+      question: "Podemos colocar __ dentro do JSX",
       numberCard: "3/5",
-      inside:
-        "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
+      inside: "expressões",
       button1: "Aprendi agora",
       button2: "Não lembrei",
       button3: "Lembrei com esforço",
       button4: "Zap!",
     },
     {
-      question: "O que fazes?",
+      question: "Componentes devem iniciar com __ ",
       numberCard: "4/5",
-      inside:
-        "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
+      inside: "letra maiúscula",
       button1: "Aprendi agora",
       button2: "Não lembrei",
       button3: "Lembrei com esforço",
       button4: "Zap!",
     },
     {
-      question: "O que amas?",
+      question: "O ReactDOM nos ajuda __",
+      numberCard: "5/5",
+      inside: "interagindo com a DOM para colocar componentes React na mesma",
+      button1: "Aprendi agora",
+      button2: "Não lembrei",
+      button3: "Lembrei com esforço",
+      button4: "Zap!",
+    },
+    {
+      question: "Usamos o npm para __",
+      numberCard: "5/5",
+      inside: "gerenciar os pacotes necessários e suas dependências",
+      button1: "Aprendi agora",
+      button2: "Não lembrei",
+      button3: "Lembrei com esforço",
+      button4: "Zap!",
+    },
+    {
+      question: "Usamos props para __",
+      numberCard: "5/5",
+      inside: "passar diferentes informações para componentes",
+      button1: "Aprendi agora",
+      button2: "Não lembrei",
+      button3: "Lembrei com esforço",
+      button4: "Zap!",
+    },
+    {
+      question: "Usamos estado (state) para __",
       numberCard: "5/5",
       inside:
-        "labaxurajksnadfjiasndfoinafsoindsafkmdsnfjdsnfkmdsnfkmsdnfsdiofn9eufnjksdnfkmdxnfsdijfnisdjnfisdjnfjsdnfsdjknfisdjnfjin",
+        "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente",
       button1: "Aprendi agora",
       button2: "Não lembrei",
       button3: "Lembrei com esforço",
@@ -77,6 +101,8 @@ export default function PageTwo() {
         button3={cards[answers].button3}
         button4={cards[answers].button4}
         counter={() => Counter()}
+        win={() => Win()}
+        lose={() => Lose()}
       />
 
       {/* </div> */}
