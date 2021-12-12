@@ -9,7 +9,7 @@ export default function PageOne(props) {
       <div className="logo">
         <img src={logotipo}></img>
       </div>
-      <div className="Start" onClick={() => props.NextPage()}>
+      <div data-identifier="start-zap-recall" className="Start" onClick={() => props.NextPage()}>
         <p>Praticar React</p>
         <img src={next}></img>
       </div>

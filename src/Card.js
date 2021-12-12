@@ -54,20 +54,20 @@ export default function Card({
   }
 
   return (
-    <div className={FaceCard}>
+    <div data-identifier="flashcard" className={FaceCard}>
       <div className="topCard">
         <p>{question}</p>
-        <h2>{numberCard + 1}/8</h2>
+        <h2 data-identifier="counter">{numberCard + 1}/8</h2>
       </div>
       <div className="TopFront">
-        <h2>{numberCard + 1}/8</h2>
+        <h2 data-identifier="counter">{numberCard + 1}/8</h2>
       </div>
 
       <div className="Question">
         <h3>{question}</h3>
       </div>
 
-      <div className="openAnswer">
+      <div data-identifier="arrow" className="openAnswer">
         <img src={IMG} onClick={() => ChangeCard()}></img>
       </div>
       <div className="contentCard">
@@ -87,7 +87,7 @@ export default function Card({
           {button4}
         </button>
       </div>
-      <div className="GoToNext">
+      <div data-identifier="arrow" className="GoToNext">
         <img src={IMG} onClick={() => NextCard(counter, ChangeCard)}></img>
       </div>
     </div>
