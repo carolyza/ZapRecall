@@ -7,7 +7,7 @@ import App from "./App.js";
 export default function PageOne(props){
     return(
         <div className = "PageOne">
-        <div class ="logo">
+        <div className ="logo">
         <img src ={logotipo}></img>
         </div>
         <div className ="Start" onClick={()=>props.NextPage()}>

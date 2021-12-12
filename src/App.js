@@ -15,7 +15,6 @@ const [Page, SetPage] = useState(<PageOne NextPage={NextPage}/>);
 
 function NextPage(){
   SetPage(<PageTwo/>);
-  alert("banana");
 }
   
     return(
